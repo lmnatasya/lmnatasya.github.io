@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<title>E-learning FASILKOM </title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<h1 align="center">E-LEARNING FASILKOM</h1>
+	</header>
+	<nav>
+    	<ul>
+        	<li><b><a href="beranda.html">BERANDA</a></li></b>
+        	<li><b><a href="tentang.html">TENTANG</a></li></b>
+        	<li><b><a href="login.html">MASUK</a></li></b>
+		</ul>
+	</nav>
+	<div class="badan"><br><br><br>
+		<div align="center"><div class="border">
+			<br><br>
+		<form class="form" action="" method="POST" onsubmit="validasi();">
+			<div align="left"><label><b>USERNAME</b></label><br></div><br>
+			<input type="text" class="form_login" id="username" placeholder="Username"><br><br>
+			<div align="left"><label><b>PASSWORD</b></label><br></div><br>
+			<input type="password" class="form_login" id="password" placeholder="Password"><br><br>
+			<a href="lupasandicoba.html">Lupa Kata Sandi</a><br>
+			<a href="beranda.html"><input type="submit" class="login_button" value="LOGIN"></a>
+		</form>
+		
+		</div>
+	</div>
+
+	<script type="text/javascript">
+        // var validasi = (function (){
+        //     event.preventDefault();
+        //     alert('test');
+        // });
+
+        function myFunction() {
+
+            var x = document.getElementById("myTopnav");
+
+            if (x.className === "topnav") {
+
+                x.className += " responsive";
+
+            } else {
+
+                x.className = "topnav";
+
+            }
+
+        }
+
+        function validasi() {
+
+		var username = document.getElementById("username").value;
+
+		var password = document.getElementById("password").value;
+
+        console.log(username);
+
+		if (username == "" && password =="") {
+
+            alert("Maaf, data tidak boleh kosong. Silahkan masukkan lagi");
+
+			return false;
+
+		}else if(username !="" && password !=""){
+
+			return true;
+
+		}
+
+	 }
+
+    </script>
+
+</body>
+</html>

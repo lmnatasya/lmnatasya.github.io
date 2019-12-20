@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link rel="stylesheet" type="text/css" href="lupasandicoba.css">
+    <title>E-Learning Fasilkom</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<body>
+    <header>
+        <h1 align="center">E-LEARNING FASILKOM</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><b><a href="index.html">BERANDA</a></li></b>
+            <li><b><a href="tentang.html">TENTANG</a></li></b>
+            <li><b><a href="login.html">MASUK</a></li></b>
+        </ul>
+    </nav>
+    <div class="content" align="center">
+        <form class="form" action="" method="POST" onsubmit="validasi();"><br>
+            <label for="alamat"><b>USERNAME</b></label><br>
+            <input type="text" id="alamat" class="form-group" placeholder="Masukkan Username">
+        </form>
+        <button id="btn-show" class="button" onclick="thisClicked()">KONFIRMASI</button><br>
+    </div>
+    <div id="backdrop-modal" class="modal">
+        <div class="content-modal">
+            <div class="modal-header">
+                <span id="btn-close" class="display-topright">&times;</span>
+            </div>
+            <div class="modal-content">
+                <label for="code">Masukkan Kode Verifikasi:</label>
+                <input type="text" id="code" class="form-group" placeholder="Masukkan Kode Konfirmasi">
+            </div>
+            <div class="modal-footer">
+                <button onclick="thisClicked()" style="width:auto;" class="button">KIRIM</button>
+            </div>
+        </div>
+    </div>
+<div id="popUp1" class="popUp">
+  <form class="popUp-content animate">
+    <div class="container">
+      <label for="uname"><b>Kata Sandi Baru</b></label>
+      <input type="password" placeholder="Masukkan Kata Sandi Baru" name="uname" required>
+      <label for="psw"><b>Konfirmasi Kata Sandi </b></label>
+      <input type="password" placeholder="Konfirmasi Kata Sandi" name="psw" required>        
+      <a href="index.html"><button type="submit">Simpan</button></a>
+    </div>
+  </form>
+</div>
+<script type="text/javascript" src="lupasandicoba.js"></script>
+</body>
+</html>
+

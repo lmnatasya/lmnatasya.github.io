@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <title>E-Learning Fasilkom</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<body>
+   <header>
+        <h1 align="center">E-LEARNING FASILKOM</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><b><a href="beranda.html">BERANDA</a></li></b>
+            <li><b><a href="#">MATA KULIAH</a></b>
+                <ul>
+                    <li><b><a href="prodi.html">PRODI</a></li></b>
+                    <li><b><a href="fakultas.html">FAKULTAS</a></li></b>
+                </ul>
+            </li>
+            <li><b><a href="tentang.html">TENTANG</a></li></b>
+            <li><b><a href="index.html">KELUAR</a></li></b>
+        </ul>
+    </nav>
+    <div class="content" align="center">
+        <b><p>MATA KULIAH</p></b>
+        <h2 class="box1" id="Box1">Administrasi Sistem</h2><br><br>
+        <button class="tombol" id="Tombol" onclick="thisClicked()"><b>The Shell</b></button><br>
+        <button class="tombol" id="Tombol" onclick="thisClicked()"><b>Shell Scripting</b></button><br>
+        <button class="tombol" id="Tombol" onclick="thisClicked()"><b>Account Management</b></button><br>
+    </div>
+    <div class="sidebar"><br><br>
+        <div class="border">
+            <h4>Online Users</h4>
+            <h5>Dinda Putri Permata 162410103045</h5>
+            <h5>Budiono 182410102012</h5>
+            <h5>Virli Galuh Kirana 172410101070</h5>
+            <h5>Shely Puspitasari 172410101045</h5>
+        </div><br>
+        <div class="menu">
+            <b><a href="beranda.html">Beranda</a></b><br>
+            <b>Mata Kuliah</b><br>
+            <b><a href="prodi.html">Prodi</a></b><br>
+            <b><a href="fakultas.html">Fakultas</a></b><br>
+            <b><a href="tentang.html">Tentang</a></b><br>
+        </div>
+    </div>
+<div id="popUp1" class="popUp">
+  <form class="popUp-content animate">
+    <div class="container">
+        <h2>Apakah ingin mendownload materi ini?</h2>
+        <a href="adsis.html"><button type="submit">Ya</button></a>
+        <a href="adsis.html"><button type="submit">Tidak</button></a>
+    </div>
+  </form>
+</div>
+<script type="text/javascript" src="popup.js"></script>
+</body>
+</html>
+
