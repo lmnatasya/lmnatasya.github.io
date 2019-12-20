@@ -1,0 +1,159 @@
+body{
+    width: 100%;
+    margin: 0px;
+    background-image: url(baru.png);
+    background-size: cover;
+}
+header{
+    background-color: white;
+    padding: 1px 10px;
+    height: 70px;
+    width: auto;
+}
+h1{
+    font-size: 30px;
+    color: #4682B4;
+    font-family: monospace;
+    text-align: center;
+    padding-top: 10px; 
+}
+h2{
+    font-family: inherit;
+    font-size: 28px;
+    text-align: center;
+    color: #4682B4;
+}
+p{
+    font-family: monospace;;
+    font-size: 20px;
+    text-align: center; 
+    color: #4682B4;
+}
+nav {
+    margin:auto;
+    text-align: center;
+    width: 100%;
+} 
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul{
+    display: block;
+    width: 150px;
+}
+
+nav ul {
+    background: #4682B4;
+    padding: 0 20px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    width: 100%;
+}
+
+nav ul:after {
+    content: ""; 
+    clear:both; 
+    display: block;
+}
+
+nav ul li{
+    float:left;
+}
+
+nav ul li:hover{
+    background:#BDC3C7;
+}
+
+nav ul li:hover a{
+    color:#fff;
+}
+
+nav ul li a{
+    display: block;
+    padding: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul ul{
+    background: #4682B4;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top:100%;
+}
+
+nav ul ul li{
+    float:none;
+    border-top: 1px soild #4682B4;
+    border-bottom: 1px solid #4682B4;
+    position: relative;
+}
+
+nav ul ul li a{
+    padding: 15px 40px;
+    color: #fff;
+}
+
+nav ul ul li a:hover{
+    background-color: #BDC3C7;
+}
+
+nav ul ul ul{
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+label{
+    color: #4682B4;
+    padding-left: 18px;
+}
+.badan{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.border{
+    border: 3px solid #FF9E4E;
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    background: rgba(251, 235, 217,0.80);
+}
+.form_login{
+    border: 3px solid #FF9E4E;
+    width: 80%;
+    padding: 10px;
+    font-size: 11pt;
+    margin-bottom: 20px;
+}
+@media only screen and(max-width: 600px){
+    .badan{
+        width: 50%;
+    }
+    .border{
+        width: 50%;
+    }
+    .form_login{
+        width: 50%;
+    }
+    .login_button{
+        width: 50%;
+    }
+}
+@media only screen and(max-width: 300px){
+    .badan{
+        width: 25%;
+    }
+    .border{
+        width: 25%;
+    }
+    .form_login{
+        width: 25%;
+    }
+    .login_button{
+        width: 25%;
+    }
+}
